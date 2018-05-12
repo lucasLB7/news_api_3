@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title>{{title}}</title>
+        {% else %}
+        <title>HOME- Welcome to the news Daily.</title>
+        {% endif %}
+    </head>
+    <body>
+      <h3>Today's headlines</3>
+        <ul>
+          <li>{{ get_news_response }}</li>
+
+        </ul>
+
+    </body>
+</html>
